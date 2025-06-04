@@ -25,3 +25,8 @@ The problem required that I use classification model, and it was supervised. I e
 7.	Neural Networks
 8.	Neural Networks (Keras)
 
+## Data Pre-processing
+Firstly I tokenize the tweets into individual words. I also convert emojis into text. I then break the words down into their root words (IE Lemmetize) and finally vectorise them. For the airline feature, I one hot encode, and I map the sentiments IE Positive=2, neutral=1, and negative=0. Now the dataset can be used by models that require numeric features.
+
+## Modeling
+As specified above, I have decided to try 8 different models. I split the data 4:1 ration between training and test and train the 8 models. Please see results below.
