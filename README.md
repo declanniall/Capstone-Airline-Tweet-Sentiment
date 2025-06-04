@@ -62,5 +62,14 @@ As said above, the data is clearly skewed towards the negative, which seems to b
 | Keras NN      | 137.661974   | 0.999559       | 0.837976      | 0.999559         | 0.830875       | 0.999559     | 0.837976    | 0.999559       | 0.833100      |
 
 In general SMOTE helped the models as the recall and precision scores inproved for all the models. Except for KNN, which clearly is not working for this dataset. SVC looked like it gained most from the balancing. Below gives a visualisation of the comparison
+
 ![Model Performance Before and After SMOTE](https://github.com/user-attachments/assets/81c14fdc-6089-4e52-b11c-3c3bb7c25a61)
- 
+
+### Optimizing the Hyperparameters
+At this point I pick the best 4 models and see can I optimize the parameters and get a better performance. THe best 4 models are
+LogRegress
+Naive Bayes
+Keras Neural Net
+Random Forest 
+I use GridSearchCV for all but Keras Neural Net, which does not seem to work well with 
+
