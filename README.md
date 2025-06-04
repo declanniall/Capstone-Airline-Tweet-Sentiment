@@ -32,15 +32,17 @@ Firstly I tokenize the tweets into individual words. I also convert emojis into 
 As specified above, I have decided to try 8 different models. I split the data 4:1 ration between training and test and train the 8 models. Please see results below.
 ![airline_sentiment_model_results](https://github.com/user-attachments/assets/43290dc9-c018-4cd6-9073-d71f9edf72d4)
 
-           Model   Train Time  Train Accuracy  Test Accuracy  Train Precision  Test Precision  Train Recall  Test Recall  Train F1 Score  Test F1 Score
-0     LogRegress     1.171440        0.924309       0.871402         0.926313        0.870846      0.924309     0.871402        0.920955       0.860664 
-1            KNN     0.015734        0.407476       0.283194         0.773582        0.692901      0.407476     0.283194        0.442185       0.282843
-2  Decision Tree     5.217317        0.999420       0.761374         0.999419        0.756764      0.999420     0.761374        0.999419       0.758860
-3            SVC  1963.066364        0.944045       0.779480         0.946727        0.814459      0.944045     0.779480        0.941794       0.727004
-4    Naive Bayes     0.000000        0.759926       0.735840         0.812907        0.783016      0.759926     0.735840        0.697298       0.652304
-5  Random Forest    34.666027        0.999420       0.811978         0.999421        0.816931      0.999420     0.811978        0.999420       0.782927
-6     Neural Net   244.003658        0.999420       0.832405         0.999420        0.821684      0.999420     0.832405        0.999420       0.823225 
-7       Keras NN    76.020786        0.999303       0.846332         0.999304        0.845479      0.999303     0.846332        0.999304       0.845894  
+| Model         | Train Time  | Train Accuracy | Test Accuracy | Train Precision | Test Precision | Train Recall | Test Recall | Train F1 Score | Test F1 Score |
+|---------------|-------------|----------------|---------------|------------------|----------------|--------------|-------------|----------------|---------------|
+| LogRegress    | 1.171440    | 0.924309       | 0.871402      | 0.926313         | 0.870846       | 0.924309     | 0.871402    | 0.920955       | 0.860664      |
+| KNN           | 0.015734    | 0.407476       | 0.283194      | 0.773582         | 0.692901       | 0.407476     | 0.283194    | 0.442185       | 0.282843      |
+| Decision Tree | 5.217317    | 0.999420       | 0.761374      | 0.999419         | 0.756764       | 0.999420     | 0.761374    | 0.999419       | 0.758860      |
+| SVC           | 1963.066364 | 0.944045       | 0.779480      | 0.946727         | 0.814459       | 0.944045     | 0.779480    | 0.941794       | 0.727004      |
+| Naive Bayes   | 0.000000    | 0.759926       | 0.735840      | 0.812907         | 0.783016       | 0.759926     | 0.735840    | 0.697298       | 0.652304      |
+| Random Forest | 34.666027   | 0.999420       | 0.811978      | 0.999421         | 0.816931       | 0.999420     | 0.811978    | 0.999420       | 0.782927      |
+| Neural Net    | 244.003658  | 0.999420       | 0.832405      | 0.999420         | 0.821684       | 0.999420     | 0.832405    | 0.999420       | 0.823225      |
+| Keras NN      | 76.020786   | 0.999303       | 0.846332      | 0.999304         | 0.845479       | 0.999303     | 0.846332    | 0.999304       | 0.845894      |
+
 
 Looking at above results, it is clear that Keras Neural Net is the best overall model with high scores across the board. Logistics regression did OK, and was very fast. Random Forest, the Neural Net did well, but not as good as Keras. Also had higher variance. Decison tree clearly overfit, SVC looks like it does too. KNN performed worst, which is a surprise. But the model can probably be improved by balancing the data, and tuning the hyperparameters.
 
