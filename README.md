@@ -50,15 +50,16 @@ Looking at above results, it is clear that Keras Neural Net is the best overall 
 ### Balancing the Data
 As said above, the data is clearly skewed towards the negative, which seems to be affecting the models. So I  use SMOTE, Synthetic Minority Over-sampling Technique — to balance the dataset. The results are below
 ![airline_sentiment_model_results_bal](https://github.com/user-attachments/assets/3ef3272c-6df7-488b-99c9-4a7f8c36c008)
-           Model   Train Time  Train Accuracy  Test Accuracy  Train Precision  Test Precision  Train Recall  Test Recall  Train F1 Score  Test F1 Score
-0     LogRegress     2.726725        0.964189       0.859796         0.964288        0.868853      0.964189     0.859796        0.964177       0.863037
-1            KNN     0.031722        0.738675       0.264624         0.827725        0.688690      0.738675     0.264624        0.686180       0.240743
-2  Decision Tree     9.440346        0.999724       0.752089         0.999724        0.759415      0.999724     0.752089        0.999724       0.755328
-3            SVC  1803.385781        0.989958       0.799443         0.990028        0.788627      0.989958     0.799443        0.989959       0.789271
-4    Naive Bayes     0.015840        0.921812       0.843547         0.922207        0.847445      0.921812     0.843547        0.921799       0.845287
-5  Random Forest   997.392090        0.999724       0.843547         0.999724        0.838498      0.999724     0.843547        0.999724       0.831991
-6     Neural Net  2358.420714        0.999559       0.818942         0.999559        0.807868      0.999559     0.818942        0.999559       0.811087  
-7       Keras NN   137.661974        0.999559       0.837976         0.999559        0.830875      0.999559     0.837976        0.999559       0.833100
+| Model         | Train Time   | Train Accuracy | Test Accuracy | Train Precision | Test Precision | Train Recall | Test Recall | Train F1 Score | Test F1 Score |
+|---------------|--------------|----------------|---------------|------------------|----------------|--------------|-------------|----------------|---------------|
+| LogRegress    | 2.726725     | 0.964189       | 0.859796      | 0.964288         | 0.868853       | 0.964189     | 0.859796    | 0.964177       | 0.863037      |
+| KNN           | 0.031722     | 0.738675       | 0.264624      | 0.827725         | 0.688690       | 0.738675     | 0.264624    | 0.686180       | 0.240743      |
+| Decision Tree | 9.440346     | 0.999724       | 0.752089      | 0.999724         | 0.759415       | 0.999724     | 0.752089    | 0.999724       | 0.755328      |
+| SVC           | 1803.385781  | 0.989958       | 0.799443      | 0.990028         | 0.788627       | 0.989958     | 0.799443    | 0.989959       | 0.789271      |
+| Naive Bayes   | 0.015840     | 0.921812       | 0.843547      | 0.922207         | 0.847445       | 0.921812     | 0.843547    | 0.921799       | 0.845287      |
+| Random Forest | 997.392090   | 0.999724       | 0.843547      | 0.999724         | 0.838498       | 0.999724     | 0.843547    | 0.999724       | 0.831991      |
+| Neural Net    | 2358.420714  | 0.999559       | 0.818942      | 0.999559         | 0.807868       | 0.999559     | 0.818942    | 0.999559       | 0.811087      |
+| Keras NN      | 137.661974   | 0.999559       | 0.837976      | 0.999559         | 0.830875       | 0.999559     | 0.837976    | 0.999559       | 0.833100      |
 
 In general SMOTE helped the models as the recall and precision scores inproved for all the models. Except for KNN, which clearly is not working for this dataset. SVC looked like it gained most from the balancing. Below gives a visualisation of the comparison
 ![Model Performance Before and After SMOTE](https://github.com/user-attachments/assets/81c14fdc-6089-4e52-b11c-3c3bb7c25a61)
