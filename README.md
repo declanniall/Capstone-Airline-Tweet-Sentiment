@@ -30,3 +30,5 @@ Firstly I tokenize the tweets into individual words. I also convert emojis into 
 
 ## Modeling
 As specified above, I have decided to try 8 different models. I split the data 4:1 ration between training and test and train the 8 models. Please see results below.
+
+
