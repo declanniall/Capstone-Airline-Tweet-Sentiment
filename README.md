@@ -2,7 +2,7 @@
 ## The Problem
 Many Twitter users tweet about there travel experiences, particularly with regard to Airlines, and the service they received on particular airlines. This can have an influence on the future purchase decisions of potential passengers, so it is important for Airline management to know how its Airline is perceived on Twitter.
 
-The objective is to build a model than can analyses the sentiment of a tweet. That way a Website can be built around the model which can get a quantative information on an airlines twitter perception over a time period and examine the trend of that perception.
+The objective is to build a model than can analyses the sentiment of a tweet. That way a Website can be built around the model which can get a quantative information on an airlines twitter perception over a time period and examine the trend of that perception. Or marketing tools could be built to target users who like an Airline and indicate they would travel again on same airline. Or to quickly reply and flag negative tweets so interventions can provent negative tweets turning into a pile on.
 
 ## Model Outcomes
 This will be a classification model with the outcome being either a negative, positive, or neutral sentiment. It is be a supervised learning algorithm that is used.
@@ -100,7 +100,7 @@ While I have built a model to do sentiment analysis on Tweets, it is good to com
 Clearly OpenAI Performed best across all metrics against the models I built. Not surprisingly considering the resource gap.
 
 ## Conclusion
-
+In order to Analysys tweets OpenAI is clearly the superior sentiment classifier. But in order to realtime scan tweets, it could become expensive. For a more cost effective model, the Logistic Regression model is best.
 
 
 
