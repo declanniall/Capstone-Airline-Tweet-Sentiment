@@ -71,5 +71,12 @@ LogRegress
 Naive Bayes
 Keras Neural Net
 Random Forest 
-I use GridSearchCV for all but Keras Neural Net, which does not seem to work well with 
+I use GridSearchCV for all but Keras Neural Net, which does not seem to work well with that library called kerastuner. See below
+![gridsearch_results](https://github.com/user-attachments/assets/61d0d220-db62-40c4-9d48-1382d87cc11e)
+| Model         | Train Time   | Train Accuracy | Test Accuracy | Train Precision | Test Precision | Train Recall | Test Recall | Train F1 Score | Test F1 Score |
+|---------------|--------------|----------------|---------------|------------------|----------------|---------------|--------------|----------------|----------------|
+| LogRegress    | 1465.589591  | 0.995751       | 0.865367      | 0.995761         | 0.865415       | 0.995751      | 0.865367     | 0.995751       | 0.865271       |
+| Naive Bayes   | 4863.846278  | 0.957788       | 0.844940      | 0.957848         | 0.844595       | 0.957788      | 0.844940     | 0.957755       | 0.844718       |
+| Random Forest | 255.451345   | 0.999724       | 0.844475      | 0.999724         | 0.839394       | 0.999724      | 0.844475     | 0.999724       | 0.833102       |
+| Keras NN      | 28731.355840 | 0.999393       | 0.848189      | 0.999393         | 0.842134       | 0.999393      | 0.848189     | 0.999393       | 0.844010       |
 
