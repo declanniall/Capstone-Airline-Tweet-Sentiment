@@ -71,7 +71,7 @@ LogRegress
 Naive Bayes
 Keras Neural Net
 Random Forest 
-I use GridSearchCV for all but Keras Neural Net, which does not seem to work well with that library called kerastuner. See below
+I use GridSearchCV for all but Keras Neural Net, which does not seem to work well with that library called kerastuner. I trained the model on the balanced training set. See below
 ![gridsearch_results](https://github.com/user-attachments/assets/61d0d220-db62-40c4-9d48-1382d87cc11e)
 | Model         | Train Time   | Train Accuracy | Test Accuracy | Train Precision | Test Precision | Train Recall | Test Recall | Train F1 Score | Test F1 Score |
 |---------------|--------------|----------------|---------------|------------------|----------------|---------------|--------------|----------------|----------------|
@@ -79,4 +79,12 @@ I use GridSearchCV for all but Keras Neural Net, which does not seem to work wel
 | Naive Bayes   | 4863.846278  | 0.957788       | 0.844940      | 0.957848         | 0.844595       | 0.957788      | 0.844940     | 0.957755       | 0.844718       |
 | Random Forest | 255.451345   | 0.999724       | 0.844475      | 0.999724         | 0.839394       | 0.999724      | 0.844475     | 0.999724       | 0.833102       |
 | Keras NN      | 28731.355840 | 0.999393       | 0.848189      | 0.999393         | 0.842134       | 0.999393      | 0.848189     | 0.999393       | 0.844010       |
+Below compares the models before and after tuning the Hyperparameters. As you can see, there is slight improvement.
+![Model Performance Before and After Grid](https://github.com/user-attachments/assets/e84e3ad9-5c1d-4ede-97f6-fb8782e43005)
+
+### Overall results of the improvement
+As you can see below, Naive Bayes and Random forest benefited most from teh Mdoel improvements, mostely by balancing the data.
+![Model Performance Before and After Improvement](https://github.com/user-attachments/assets/68ecb46d-3743-4f83-adfa-af0c90e5db1a)
+
+
 
