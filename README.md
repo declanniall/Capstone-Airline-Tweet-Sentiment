@@ -83,8 +83,28 @@ Below compares the models before and after tuning the Hyperparameters. As you ca
 ![Model Performance Before and After Grid](https://github.com/user-attachments/assets/e84e3ad9-5c1d-4ede-97f6-fb8782e43005)
 
 ### Overall results of the improvement
-As you can see below, Naive Bayes and Random forest benefited most from teh Mdoel improvements, mostely by balancing the data.
+As you can see below, Naive Bayes and Random forest benefited most from the Model improvements, mostely by balancing the data.
 ![Model Performance Before and After Improvement](https://github.com/user-attachments/assets/68ecb46d-3743-4f83-adfa-af0c90e5db1a)
+
+## Comparing against the Marketplace
+While I have built a model to do sentiment analysis on Tweets, it is good to compare it's performance to one of the AI engins in the marketplace I chaseo to compare it a gainst OpenAI. I got OPenAI to sentiment analyse a random 2000 samples from the original set, which is roughly the size of the test set of data. The results are in below table, with comparisons of the previous 4 models. I took out the timing metric because I had to slow the OpenAI model down due to cost constraints.
+
+| Model         | Test Accuracy | Test Precision | Test Recall | Test F1 Score |
+|---------------|----------------|----------------|-------------|----------------|
+| LogRegress    | 0.865367       | 0.865415       | 0.865367    | 0.865271       |
+| Naive Bayes   | 0.844940       | 0.844595       | 0.844940    | 0.844718       |
+| Random Forest | 0.844475       | 0.839394       | 0.844475    | 0.833102       |
+| Keras NN      | 0.848189       | 0.842134       | 0.848189    | 0.844010       |
+| **OpenAI**    | **0.9155**     | **0.920884**   | **0.9155**  | **0.917901**   |
+
+Clearly OpenAI Performed best across all metrics against the models I built. Not surprisingly considering the resource gap.
+
+## Conclusion
+
+
+
+
+
 
 
 
