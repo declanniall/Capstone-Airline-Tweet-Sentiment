@@ -83,7 +83,7 @@ Below compares the models before and after tuning the Hyperparameters. As you ca
 ![Model Performance Before and After Grid](https://github.com/user-attachments/assets/e84e3ad9-5c1d-4ede-97f6-fb8782e43005)
 
 ### Overall results of the improvement
-As you can see below, Naive Bayes and Random forest benefited most from the Model improvements, mostely by balancing the data.
+As you can see below, Naive Bayes and Random forest benefited most from the Model improvements, mostely by balancing the data. IF I was to continue this program, I might play around with the hyperparameters settings. For instance, with Random Forest I might limit the tress depth. OR for Keras Neural Net, I might use EarlyStopping.
 ![Model Performance Before and After Improvement](https://github.com/user-attachments/assets/68ecb46d-3743-4f83-adfa-af0c90e5db1a)
 
 ## Comparing against the Marketplace
